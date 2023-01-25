@@ -1,0 +1,109 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+
+class hundred661 extends StatefulWidget {
+  const hundred661({Key? key}) : super(key: key);
+
+  @override
+  State<hundred661> createState() => _hundred661State();
+}
+
+class _hundred661State extends State<hundred661> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.orangeAccent,
+
+
+
+
+
+      body: Center(
+        child: Container(
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                stops: [
+                  0.1,
+                  0.4,
+                  0.6,
+                  0.9,
+                ],
+                colors: [
+                  Colors.yellow,
+                  Colors.red,
+                  Colors.indigo,
+                  Colors.teal,
+                ],
+              )),
+          child: ListView(
+            children: [
+
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: const Color.fromRGBO(0, 0, 0, 0.10),
+                  ),
+                  child: Row(
+                    children: [
+                      Flexible(
+                        flex: 1,
+                        fit: FlexFit.tight,
+                        child: Center(
+                          child: RichText(
+                            text: const TextSpan(
+                              text:
+
+                              '\n 661 = '
+                                  '\n SIX-HUNDRED-SIXTY-ONE \n'
+                              '\n 662 = '
+                                  '\n SIX-HUNDRED-SIXTY-TWO \n'
+                              '\n 663 = '
+                                  '\n SIX-HUNDRED-SIXTY-THREE \n'
+                              '\n 664 = '
+                                  '\n SIX-HUNDRED-SIXTY-FOUR \n'
+                              '\n 665 = '
+                                  '\n SIX-HUNDRED-SIXTY-FIVE \n'
+                              '\n 666 = '
+                                  '\n SIX-HUNDRED-SIXTY-SIX \n'
+                              '\n 667 = '
+                                  '\n SIX-HUNDRED-SIXTY-SEVEN \n'
+                              '\n 668 = '
+                                  '\n SIX-HUNDRED-SIXTY-EIGHT \n'
+                              '\n 669 = '
+                                  '\n SIX-HUNDRED-SIXTY-NINE \n'
+                              '\n 670 = '
+                                  '\n SIX-HUNDRED-SEVENTY \n'
+
+                              ,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 22.0,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      // const Icon(Icons.expand_more_outlined,),
+                    ],
+                  ),
+                ),
+              ),
+
+              const SizedBox(
+                height: 5,
+              ),
+
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
